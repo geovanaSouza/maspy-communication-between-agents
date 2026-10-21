@@ -9,10 +9,10 @@ setup: ## Create the virtual environment and install project dependencies
 	uv venv $(VENV) --python 3.12
 	uv pip install --python $(PYTHON) -e .
 
-run: run-achieve ## Run all examples sequencially
+run: run-unicast ## Run all examples sequencially
 
-run-achieve: ## Run the achieve communication example
-	$(PYTHON) examples/01_achieve.py
+run-unicast: ## Run the unicast communication example
+	$(PYTHON) examples/01_unicast.py
 
 clean: ## Remove the virtual environment
 	rm -rf $(VENV)
