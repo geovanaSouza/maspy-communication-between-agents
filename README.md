@@ -19,7 +19,7 @@ make run
 - [ ] Sample messages (multicast, one-to-many) — `achieve`, `tell`, `tellHow`
 - [ ] Broadcast (one-to-all) — act not defined yet
 
-### Communication acts not covered yet
+### Communication acts not covered by the examples above
 
 - [ ] `untell` (Belief)
 - [ ] `untellHow` (Plan)
