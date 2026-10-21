@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maspy-communication-between-agents"
+version = "0.1.0"
+description = "Small playground for experimenting with MASPY communication acts between agents."
+requires-python = ">=3.12"
+dependencies = [
+    "maspy-ml==2026.5.13",
+]
