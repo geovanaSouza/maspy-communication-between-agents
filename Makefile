@@ -3,16 +3,19 @@ VENV ?= .venv
 # PYTHON: Python interpreter used by setup (default: $(VENV)/bin/python)
 PYTHON ?= $(VENV)/bin/python
 
-.PHONY: setup run run-achieve clean help
+.PHONY: setup run run-unicast run-many-to-one clean help
 
 setup: ## Create the virtual environment and install project dependencies
 	uv venv $(VENV) --python 3.12
 	uv pip install --python $(PYTHON) -e .
 
-run: run-unicast ## Run all examples sequencially
+run: run-unicast run-many-to-one ## Run all examples sequentially
 
 run-unicast: ## Run the unicast communication example
 	$(PYTHON) examples/01_unicast.py
+
+run-many-to-one: ## Run the many-to-one communication example
+	$(PYTHON) examples/02_many_to_one.py
 
 clean: ## Remove the virtual environment
 	rm -rf $(VENV)
