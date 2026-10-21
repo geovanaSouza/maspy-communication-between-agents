@@ -15,7 +15,7 @@ make run
 
 ### Messaging patterns
 
-- [ ] Send/receive (unicast, one-to-one) — `achieve`
+- [x] Send/receive (unicast, one-to-one) — `achieve`
 - [ ] Sample messages (multicast, one-to-many) — `achieve`, `tell`, `tellHow`
 - [ ] Broadcast (one-to-all) — act not defined yet
 
